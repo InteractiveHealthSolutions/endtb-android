@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Edit"
+        android:title="@string/english" />
+    <item
+        android:id="@+id/SAVE"
+        android:title="@string/urdu" />
+    <item
+        android:id="@+id/MENU_DELETE"
+        android:title="@string/roman" />
+</menu>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:icon="@android:drawable/ic_secure"
+        android:key="ssl"
+        android:defaultValue="true"
+        android:summary="Toggle to enable or disable SSL"
+        android:title="Use SSL" />
+    <EditTextPreference
+        android:inputType="text"
+        android:key="address"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:summary="Please provide server IP address"
+        android:title="@string/server_address">
+
+    </EditTextPreference>
+
+    <EditTextPreference
+        android:digits="0123456789"
+        android:inputType="number"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:key="port"
+        android:summary="Please provide port number"
+        android:title="@string/server_port">
+
+    </EditTextPreference>
+
+</PreferenceScreen>

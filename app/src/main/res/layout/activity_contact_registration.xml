@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/svMain"
+            android:layout_above="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.ihsinformatics.endtb.Screens.ContactRegistration">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvQuestion_typeOfEnc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rlQuestion_typeOfEnc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvAsterik1"
+                            style="@style/asterik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/asterik" />
+
+                        <TextView
+                            android:id="@+id/tvQuestion_typeOfEnc"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toRightOf="@+id/tvAsterik1"
+                            android:text="@string/type_of_encounter" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_typeOfEnc"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_typeOfEnc"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_typeOfEnc"
+                            android:background="@drawable/drop_down_shape"
+                            android:orientation="horizontal">
+                            <Spinner
+                                android:id="@+id/spAnswer_typeOfEnc"
+                                style="@style/question_answer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:popupBackground="@drawable/drop_down_popup_shape"
+                                android:spinnerMode="dropdown"
+                                android:entries="@array/gender" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="16dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvQuestion_monthOfTx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rlQuestion_monthOfTx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvAsterik2"
+                            style="@style/asterik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/asterik" />
+
+                        <TextView
+                            android:id="@+id/tvQuestion_monthOfTx"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toRightOf="@+id/tvAsterik2"
+                            android:text="@string/month_of_tx" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_monthOfTx"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_monthOfTx"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/spAnswer_monthOfTx"
+                            style="@style/question_answer"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/drop_down_shape"
+                            android:layout_width="match_parent"
+                            android:digits="0123456789"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_monthOfTx" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvQuestion_newContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    android:visibility="gone"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rlQuestion_newContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvAsterik3"
+                            style="@style/asterik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/asterik" />
+
+                        <TextView
+                            android:id="@+id/tvQuestion_newContact"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toRightOf="@+id/tvAsterik3"
+                            android:text="@string/is_new_member" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_newContact"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_newContact"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/drop_down_shape"
+                            android:layout_below="@id/tvMessage_newContact"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spAnswer_newContact"
+                                style="@style/question_answer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:popupBackground="@drawable/drop_down_popup_shape"
+                                android:spinnerMode="dropdown"
+                                android:entries="@array/gender" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="16dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvQuestion_howManyNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rlQuestion_howManyNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvAsterik4"
+                            style="@style/asterik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/asterik" />
+
+                        <TextView
+                            android:id="@+id/tvQuestion_howManyNew"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toRightOf="@+id/tvAsterik4"
+                            android:text="@string/how_many_new_members" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_howManyNew"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_howManyNew"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/spAnswer_howManyNew"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_howManyNew"
+                            android:digits="0123456789"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/drop_down_shape"
+                            android:maxLength="3" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvQuestion_howManyPeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rlQuestion_howManyPeople"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvAsterik5"
+                            style="@style/asterik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/asterik" />
+
+                        <TextView
+                            android:id="@+id/tvQuestion_howManyPeople"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toRightOf="@+id/tvAsterik5"
+                            android:text="@string/how_many_people_sleep" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_howManyPeople"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_howManyPeople"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/spAnswer_howManyPeople"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="0123456789"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/drop_down_shape"
+                            android:layout_below="@id/tvMessage_howManyPeople" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/llContacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/save" />
+    </RelativeLayout>
+</layout>

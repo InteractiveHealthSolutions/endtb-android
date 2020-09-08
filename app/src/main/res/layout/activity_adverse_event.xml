@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ihsinformatics.endtb.Screens.AdverseEvent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/card_elevation"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvQuestion_IsReportingAE"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/is_reporting_ae" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_IsReportingAE"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_IsReportingAE"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:id="@+id/rgIsReportingAE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_IsReportingAE"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/rbYesIsReportingAE"
+                            style="@style/answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbNoIsReportingAE"
+                            style="@style/answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvIsSeriousAE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/card_elevation"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvQuestion_IsSeriousAE"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/is_serious_ae" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_IsSeriousAE"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_IsSeriousAE"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:id="@+id/rgIsSeriousAE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_IsSeriousAE"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/rbYesIsSeriousAE"
+                            style="@style/answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbNoIsSeriousAE"
+                            style="@style/answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvTransferredImmediately"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/card_elevation"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvQuestion_TransferredImmediately"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/was_pat_transferred" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_TransferredImmediately"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_TransferredImmediately"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:id="@+id/rgTransferredImmediately"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_TransferredImmediately"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RadioButton
+                            android:id="@+id/rbYesTransferredImmediately"
+                            style="@style/answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.75"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbNoTransferredImmediately"
+                            style="@style/answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.75"
+                            android:text="@string/no" />
+
+                        <RadioButton
+                            android:id="@+id/rbNATransferredImmediately"
+                            style="@style/answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:text="@string/not_applicable" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/llNoAE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvFever"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbFever"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fever" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvSlowHR"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbSlowHR"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/slow_heart_rate" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvChestPain"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbChestPain"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chest_pain" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvPain"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbPain"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pain" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvShortnessOfBreath"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbShortnessOfBreath"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shortness_of_breath" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvBloodLoss"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbBloodLoss"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blood_loss" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvEyeSymptoms"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbEyeSymptoms"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eye_symptoms" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvAbdominalPain"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbAbdominalPain"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abdominal_pain" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvVomiting"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbVomiting"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vomiting" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvDiarrhea"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbDiarrhea"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diarrhea" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvSevereAllergic"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbSevereAllergic"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/severe_allergic_reaction" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvDepressedConsciousnessLevel"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbDepressedConsciousnessLevel"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/depressed_consciousness_level" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvNewSeizure"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbNewSeizure"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/new_seizure_onset" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvSeizure"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbSeizure"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seizure" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvDepression"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbDepression"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/depression" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvUrinePb"
+                    style="@style/checkbox_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbUrinePb"
+                        style="@style/checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/urine_problems" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvIfNonSeriousAE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvQuestion_IfNonSeriousAE"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/was_pat_transferred" />
+                        <view
+                            class="android.widget.TextView"
+                            android:id="@+id/verticalSeparator_IfNonSeriousAE"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/tvQuestion_IfNonSeriousAE"
+                            android:background="@color/DarkGray"/>
+
+                        <TextView
+                            android:id="@+id/tvMessage_IfNonSeriousAE"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/verticalSeparator_IfNonSeriousAE"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:id="@+id/rgIfNonSeriousAE"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_IfNonSeriousAE"
+                            android:orientation="vertical"
+                            android:weightSum="3">
+
+                            <RadioButton
+                                android:id="@+id/rb1"
+                                style="@style/radio_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fup_next_day" />
+
+                            <RadioButton
+                                android:id="@+id/rb2"
+                                style="@style/radio_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cunsult_n_advice_ancillary" />
+
+                            <RadioButton
+                                android:id="@+id/rb3"
+                                style="@style/radio_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cunsult_n_advice_referral" />
+
+                            <RadioButton
+                                android:id="@+id/rb4"
+                                style="@style/radio_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no_action_required" />
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

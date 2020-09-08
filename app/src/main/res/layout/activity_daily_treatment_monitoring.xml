@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryTint"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    tools:context="com.ihsinformatics.endtb.Screens.DailyTreatmentMonitoring">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_gradient"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/ivGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                app:srcCompat="@drawable/male_icon" />
+
+            <LinearLayout
+                android:id="@+id/llBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@+id/ivGender"
+                android:layout_toEndOf="@+id/ivGender"
+                android:clickable="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPatientId"
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:layout_gravity="start"
+                    android:text="@string/address_of_facility"
+                    android:textColor="@color/White"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvPatientName"
+                        style="@style/question_answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:clickable="false"
+                        android:text="@string/address_of_facility"
+                        android:textColor="@color/White"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvAge"
+                        android:layout_toEndOf="@+id/tvPatientName"
+                        style="@style/question_answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:clickable="false"
+                        android:text="Age"
+                        android:textColor="@color/White"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvDayOfTx"
+                        style="@style/question_answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:text="Contact"
+                        android:textColor="@color/White"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="16dp"
+                android:id="@+id/llLanguage"
+                android:clickable="true"
+                android:background="?android:selectableItemBackground"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    app:srcCompat="@drawable/ic_language" />
+                <TextView
+                    android:text="اردو"
+                    android:id="@+id/tvLanguage"
+                    android:layout_width="wrap_content"
+                    android:clickable="false"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlQuestion_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/drop_shadow"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvAsterik1"
+                style="@style/asterik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/asterik" />
+
+            <TextView
+                android:id="@+id/tvQuestion_longitude"
+                style="@style/question_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/tvAsterik1"
+                android:text="Longitude" />
+
+            <TextView
+                android:id="@+id/tvMessage_longitude"
+                style="@style/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvQuestion_longitude"
+                android:gravity="right"
+                android:text="@string/app_name"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etAnswer_longitude"
+                style="@style/question_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMessage_longitude"
+                android:clickable="true"
+                android:focusable="false"
+                android:inputType="none" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlQuestion_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/drop_shadow"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvAsterik2"
+                style="@style/asterik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/asterik" />
+
+            <TextView
+                android:id="@+id/tvQuestion_latitude"
+                style="@style/question_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/tvAsterik2"
+                android:text="Latitude" />
+
+            <TextView
+                android:id="@+id/tvMessage_latitude"
+                style="@style/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvQuestion_latitude"
+                android:gravity="right"
+                android:text="@string/app_name"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etAnswer_latitude"
+                style="@style/question_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMessage_latitude"
+                android:clickable="true"
+                android:focusable="false"
+                android:inputType="none" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llPrescribed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNonPrescribed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/question_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/tvAsterik1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Non Prescribed Drugs"
+                android:textColor="@color/White"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save" />
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,1513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ihsinformatics.endtb.Screens.TSMonitoring"
+    tools:showIn="@layout/activity_tsmonitoring">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvPatUnderstand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_PatUnderstand"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/does_patient_understand" />
+
+                <TextView
+                    android:id="@+id/tvMessage_PatUnderstand"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_PatUnderstand"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/rgPatUnderstand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_PatUnderstand"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:id="@+id/rbYesPatUnderstand"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbNoPatUnderstand"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
+                    <RadioButton
+                        android:id="@+id/rbUnknownPatUnderstand"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/unknown" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvPatKnowSE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_PatKnowSE"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/does_pat_know_side_effect" />
+
+                <TextView
+                    android:id="@+id/tvMessage_PatKnowSE"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_PatKnowSE"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/rgPatKnowSE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_PatKnowSE"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:id="@+id/rbYesPatKnowSE"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                    android:id="@+id/rbNoPatKnowSE"
+                    style="@style/answer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/no" />
+
+                    <RadioButton
+                        android:id="@+id/rbUnknownPatKnowSE"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/unknown" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvHowOftenTX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestions_HowOftenTX"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/how_often_dot" />
+
+                <TextView
+                    android:id="@+id/tvMessage_HowOftenTX"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestions_HowOftenTX"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spAnswer_HowOftenTX"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_HowOftenTX" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvIfTxIrregular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_IfTxIrregular"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/dot_irregularly" />
+
+                <TextView
+                    android:id="@+id/tvMessage_IfTxIrregular"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_IfTxIrregular"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spAnswer_IfTxIrregular"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_IfTxIrregular" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvPlaceTxDOT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_PlaceTxDOT"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/place_dot" />
+
+                <TextView
+                    android:id="@+id/tvMessage_PlaceTxDOT"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_PlaceTxDOT"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spAnswer_PlaceTxDOT"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_PlaceTxDOT" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvOtherPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_OtherPlace"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/other_place_dot" />
+
+                <TextView
+                    android:id="@+id/tvMessage_OtherPlace"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_OtherPlace"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etAnswer_OtherPlace"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_OtherPlace" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvDOTLastPrescribedDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_DOTLastPrescribedDay"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/dot_last_prescribed_day" />
+
+                <TextView
+                    android:id="@+id/tvMessage_DOTLastPrescribedDay"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_DOTLastPrescribedDay"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/rgDOTLastPrescribedDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_DOTLastPrescribedDay"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/rbYesDOTLastPrescribedDay"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbDOTLastPrescribedDay"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvAdministerInjectables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_AdministerInjectables"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/administer_injectables" />
+
+                <TextView
+                    android:id="@+id/tvMessage_AdministerInjectables"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_AdministerInjectables"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/rgAdministerInjectables"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_AdministerInjectables"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:id="@+id/rbYesAdministerInjectables"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbNoAdministerInjectables"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
+
+                    <RadioButton
+                        android:id="@+id/rbUnknownAdministerInjectables"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/unknown" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvDidMissDose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_DidMissDose"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/patient_miss_any_dose" />
+
+                <TextView
+                    android:id="@+id/tvMessage_DidMissDose"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_DidMissDose"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spAnswer_DidMissDose"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_DidMissDose" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvWhyMissedDose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_WhyMissedDose"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/why_missed_dose" />
+
+                <TextView
+                    android:id="@+id/tvMessage_WhyMissedDose"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_WhyMissedDose"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spAnswer_WhyMissedDose"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_WhyMissedDose" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvMissedOtherReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_MissedOtherReason"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/other_reason_missed_dose" />
+
+                <TextView
+                    android:id="@+id/tvMessage_MissedOtherReason"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_MissedOtherReason"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etAnswer_MissedOtherReason"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_MissedOtherReason" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvTxPracticeAppropriate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_TxPracticeAppropriate"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/ts_practise_measures" />
+
+                <TextView
+                    android:id="@+id/tvMessage_TxPracticeAppropriate"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_TxPracticeAppropriate"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spAnswer_TxPracticeAppropriate"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_TxPracticeAppropriate" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvHasPatMeasures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_HasPatMeasures"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/is_reporting_ae" />
+
+                <TextView
+                    android:id="@+id/tvMessage_HasPatMeasures"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_HasPatMeasures"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spAnswer_HasPatMeasures"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_HasPatMeasures" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvHowLongTsWait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_HowLongTsWait"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/is_reporting_ae" />
+
+                <TextView
+                    android:id="@+id/tvMessage_HowLongTsWait"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_HowLongTsWait"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spAnswer_HowLongTsWait"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_HowLongTsWait" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvTSRegisterContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_TSRegisterContacts"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/is_reporting_ae" />
+
+                <TextView
+                    android:id="@+id/tvMessage_TSRegisterContacts"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_TSRegisterContacts"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/rgTSRegisterContacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_TSRegisterContacts"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/rbYesTSRegisterContacts"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbNoTSRegisterContacts"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
+
+                </RadioGroup>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvWhenLastScreening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_WhenLastScreening"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/other_place_dot" />
+
+                <TextView
+                    android:id="@+id/tvMessage_WhenLastScreening"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_WhenLastScreening"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etAnswer_WhenLastScreening"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_WhenLastScreening" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvSatisfiedWithAttitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_SatisfiedWithAttitude"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/does_patient_understand" />
+
+                <TextView
+                    android:id="@+id/tvMessage_SatisfiedWithAttitude"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_SatisfiedWithAttitude"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/rgSatisfiedWithAttitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_SatisfiedWithAttitude"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/rbYesSatisfiedWithAttitude"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbNoSatisfiedWithAttitude"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvSubmitSputum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_SubmitSputum"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/does_patient_understand" />
+
+                <TextView
+                    android:id="@+id/tvMessage_SubmitSputum"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_SubmitSputum"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/rgSubmitSputum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_PatUnderstand"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:id="@+id/rbYesSubmitSputum"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbNoSubmitSputum"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
+                    <RadioButton
+                        android:id="@+id/rbUnknownSubmitSputum"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/unknown" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvWhyNoSputum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestions_WhyNoSputum"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/how_often_dot" />
+
+                <TextView
+                    android:id="@+id/tvMessage_WhyNoSputum"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestions_WhyNoSputum"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spAnswer_WhyNoSputum"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_WhyNoSputum" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+        android:id="@+id/cvOtherReasonSputum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/card_elevation"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvQuestion_OtherReasonSputum"
+                style="@style/question_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/other_place_dot" />
+
+            <TextView
+                android:id="@+id/tvMessage_OtherReasonSputum"
+                style="@style/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvQuestion_OtherReasonSputum"
+                android:gravity="right"
+                android:text="@string/app_name"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etAnswer_OtherReasonSputum"
+                style="@style/question_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMessage_OtherReasonSputum" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvReveiveFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_ReveiveFood"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/administer_injectables" />
+
+                <TextView
+                    android:id="@+id/tvMessage_ReveiveFood"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_ReveiveFood"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/rgReveiveFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_ReveiveFood"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:id="@+id/rbYesReveiveFood"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbNoReveiveFood"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
+
+                    <RadioButton
+                        android:id="@+id/rbUnknownReveiveFood"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/refuse" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvReportAE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_ReportAE"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/administer_injectables" />
+
+                <TextView
+                    android:id="@+id/tvMessage_ReportAE"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_ReportAE"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/rgReportAE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_ReportAE"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:id="@+id/rbYesReportAE"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbNoReportAE"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
+
+                    <RadioButton
+                        android:id="@+id/rbUnknownReportAE"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/refuse" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--<android.support.v7.widget.CardView
+            android:id="@+id/cvOtherPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_OtherPlace"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/other_place_dot" />
+
+                <TextView
+                    android:id="@+id/tvMessage_OtherPlace"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_OtherPlace"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etAnswer_OtherPlace"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_OtherPlace" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvTSAddressPB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_TSAddressPB"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/administer_injectables" />
+
+                <TextView
+                    android:id="@+id/tvMessage_TSAddressPB"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_TSAddressPB"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/rgTSAddressPB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_TSAddressPB"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:id="@+id/rbYesTSAddressPB"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbNoTSAddressPB"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
+
+                    <RadioButtone
+                        android:id="@+id/rbUnknownTSAddressPB"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/refuse" />
+                </RadioGroup>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvReferCounseling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_ReferCounseling"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/refer_for_consulting" />
+
+                <TextView
+                    android:id="@+id/tvMessage_ReferCounseling"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_ReferCounseling"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/rgReferCounseling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_ReferCounseling"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/rbYesReferCounseling"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbNoReferCounseling"
+                        style="@style/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvReferalReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_ReferalReason"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/other_place_dot" />
+
+                <TextView
+                    android:id="@+id/tvMessage_ReferalReason"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_ReferalReason"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etAnswer_ReferalReason"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_ReferalReason" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+       <!-- <android.support.v7.widget.CardView
+            android:id="@+id/cvOtherPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/card_elevation"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvQuestion_OtherPlace"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/other_place_dot" />
+
+                <TextView
+                    android:id="@+id/tvMessage_OtherPlace"
+                    style="@style/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvQuestion_OtherPlace"
+                    android:gravity="right"
+                    android:text="@string/app_name"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etAnswer_OtherPlace"
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMessage_OtherPlace" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>-->
+
+
+    </LinearLayout>
+
+</ScrollView>

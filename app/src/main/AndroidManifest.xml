@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ihsinformatics.endtb">
+
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".utils.ELimsApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".network.UnifiedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.ihsinformatics.DATA_UPLOAD_ATTEMPT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Screens.Login"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Screens.MainMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.PatientListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.DateSelector"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDialogTheme" />
+        <activity
+            android:name=".Screens.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Screens.settings.PreferencesActivity"
+            android:label="@string/title_activity_preferences"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.ErrorRecordsDisplayActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Screens.ProviderRegistration" />
+        <activity android:name=".Screens.DailyTreatmentMonitoring" />
+        <activity android:name=".database.json_helper.MonthlyReview" />
+        <activity
+            android:name=".Screens.FormsList"
+            android:label="Select a form"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDialogTheme" />
+        <activity android:name=".Screens.AdverseEvent" />
+        <activity android:name=".Screens.ContactRegistration" />
+        <activity
+            android:name=".Screens.TSMonitoring"
+            android:label="@string/title_activity_tsmonitoring"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Screens.ContactSymptomScreening" />
+        <activity android:name=".SymptomScreeningActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ihsinformatics.endtb">
+
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".utils.ELimsApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".network.UnifiedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.ihsinformatics.DATA_UPLOAD_ATTEMPT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Screens.Login"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Screens.PatientRegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.PatientProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.TestInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.MainMenu"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.PatientListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.AddTestResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.ViewTestInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.DateSelector"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDialogTheme" />
+        <activity
+            android:name=".Screens.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Screens.MultipleTestOrdersDisplay"
+            android:label="@string/title_activity_multiple_test_orders_display"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppDialogTheme" />
+        <activity
+            android:name=".Screens.PatientSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.TestSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.settings.PreferencesActivity"
+            android:label="@string/title_activity_preferences"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Screens.ErrorRecordsDisplayActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Screens.ProviderRegistration" />
+        <activity android:name=".Screens.DailyTreatmentMonitoring" />
+        <activity android:name=".database.json_helper.MonthlyReview" />
+        <activity android:name=".Screens.FormsMenu" />
+        <activity android:name=".Screens.FormsList"
+            android:screenOrientation="portrait"
+            android:label="Select a form"
+            android:theme="@style/AppDialogTheme" />
+    </application>
+
+</manifest>

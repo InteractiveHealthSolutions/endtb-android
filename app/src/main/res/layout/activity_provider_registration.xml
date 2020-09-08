@@ -1,0 +1,1515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/White"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ihsinformatics.endtb.Screens.ProviderRegistration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/activity_patient_registeration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Left Pane -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_date"
+                        style="@style/question_answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik"
+                        android:text="@string/date" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_date"
+                        style="@style/message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_date"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_date"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_date"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:inputType="none" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_lab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik1"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_lab"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik1"
+                        android:text="@string/person_role" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_lab"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_lab"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_lab"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_lab" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/rlQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/frame_input"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/tvAsterik2"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion"
+                        style="@style/question_answer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="2"
+                        android:text="@string/facility" />
+
+
+                    <Spinner
+                        android:id="@+id/spAnswer"
+                        style="@style/question_answer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:entries="@array/gender" />
+
+                    <TextView
+                        android:id="@+id/tvMessage"
+                        style="@style/message"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/personal_information"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik4"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_name"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik4"
+                        android:text="@string/first_name" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_name"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_name"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_name"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/tvAsterik4"
+                        android:layout_centerVertical="true"
+                        android:layout_below="@id/tvMessage_name"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="textCapWords"
+                        android:maxLength="50" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik6"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_fname"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik6"
+                        android:text="@string/last_name" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_fname"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_fname"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_fname"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_fname"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="textCapWords"
+                        android:maxLength="50" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_nic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik41"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_nic"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik41"
+                        android:text="@string/nic" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_nic"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_nic"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_nic"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/tvAsterik41"
+                        android:layout_centerVertical="true"
+                        android:layout_below="@id/tvMessage_nic"
+                        android:digits="0123456789-"
+                        android:inputType="number"
+                        android:maxLength="15"
+                        android:maxLines="1" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik8"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_gender"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik8"
+                        android:text="@string/sex" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_gender"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_gender"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_gender"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_gender"
+                        android:entries="@array/gender" />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik45"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_dob"
+                        style="@style/question_answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik45"
+                        android:text="@string/dob" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_dob"
+                        style="@style/message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="right"
+                        android:text="@string/date"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_dob"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_dob"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:inputType="none" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik7"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_age"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik7"
+                        android:text="@string/age" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_age"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_age"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_age"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_age"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:maxLength="3" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik9"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_contact"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik9"
+                        android:text="@string/primary_contact" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_contact"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_contact"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_contact"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_contact"
+                        android:digits="0123456789-"
+                        android:inputType="phone"
+                        android:maxLength="11" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_contact2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterikContact2"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_contact2"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterikContact2"
+                        android:text="@string/secondary_contact" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_contact2"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_contact2"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_contact2"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_contact2"
+                        android:digits="0123456789-"
+                        android:inputType="phone"
+                        android:maxLength="11" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_everHealthWorker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tvQuestion_everHealthWorker"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/ever_health_worker" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_everHealthWorker"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_everHealthWorker"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:id="@+id/rgAnswer_everHealthWorker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_everHealthWorker"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/rbYesEverHW"
+                            style="@style/question_answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbNoEverHW"
+                            style="@style/question_answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_isHealthWorker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tvQuestion_isHealthWorker"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/is_health_worker" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_isHealthWorker"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_isHealthWorker"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:id="@+id/rgAnswer_isHealthWorker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_isHealthWorker"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/rbYesIsHW"
+                            style="@style/question_answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbNoIsHW"
+                            style="@style/question_answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_occupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik5"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_occupation"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik5"
+                        android:text="@string/occupation" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_occupation"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_occupation"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_occupation"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_occupation"
+                        android:entries="@array/gender" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_occupationOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik44"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_occupationOther"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik44"
+                        android:text="@string/occupation_other" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_occupationOther"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_occupationOther"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_occupationOther"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/tvAsterik44"
+                        android:layout_centerVertical="true"
+                        android:layout_below="@id/tvMessage_occupationOther"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .0123456789-"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1" />
+
+                </RelativeLayout>
+                <TextView
+                    style="@style/question_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/address_information"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik10"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_city"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik10"
+                        android:text="@string/city" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_city"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_city"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_city"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_city"
+                        android:entries="@array/gender" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_town"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik11"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_town"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@id/tvAsterik11"
+                        android:text="@string/town" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_town"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_town"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_town"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_town"
+                        android:entries="@array/gender" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_upazila"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik12"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_upazila"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik12"
+                        android:text="@string/uc" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_upazila"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_upazila"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_upazila"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_upazila"
+                        android:entries="@array/gender" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_paddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik14"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_paddress"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@id/tvAsterik14"
+                        android:text="@string/address" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_paddress"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_paddress"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_paddress"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_paddress"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-, /#"
+                        android:inputType="textCapWords"
+                        android:maxLength="100"
+                        android:maxLines="1" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_landMark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik16"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_landMark"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@id/tvAsterik16"
+                        android:text="@string/landmark" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_landMark"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_landMark"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_landMark"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_landMark"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-, /#"
+                        android:inputType="textCapWords"
+                        android:maxLength="100"
+                        android:maxLines="1" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_canAdministerInjection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tvQuestion_canAdministerInjection"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/can_administer_injection" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_canAdministerInjection"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_canAdministerInjection"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:id="@+id/rgAnswer_canAdministerInjection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_canAdministerInjection"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/rbYesAdminister"
+                            style="@style/question_answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbNoAdminister"
+                            style="@style/question_answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_trained_at_facility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tvQuestion_trained_at_facility"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/trained_at_facility" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_trained_at_facility"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_trained_at_facility"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <RadioGroup
+                        android:id="@+id/rgAnswer_trained_at_facility"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_trained_at_facility"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/rbYesTrained_at_facility"
+                            style="@style/question_answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/rbNoTrained_at_facility"
+                            style="@style/question_answer"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/no" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_whichFacility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik81"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_whichFacility"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik81"
+                        android:text="@string/which_facility" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_whichFacility"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_whichFacility"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_whichFacility"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_whichFacility"
+                        android:entries="@array/gender" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_trainedBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik91"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_trainedBy"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik91"
+                        android:text="@string/trained_by" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_trainedBy"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_trainedBy"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_trainedBy"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_trainedBy"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:inputType="textCapWords"
+                        android:maxLength="50" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_languages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik15"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_languages"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik15"
+                        android:text="@string/languages_spoken" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_languages"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_languages"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_languages"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_languages"
+                        android:entries="@array/gender" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_otherLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik13"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_otherLanguage"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik13"
+                        android:text="@string/other_language" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_otherLanguage"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_otherLanguage"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_otherLanguage"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_otherLanguage"
+                        android:digits="abcdefghijklmnopqrstuvwxyzIJKLMNOPQRSTUVWXYZ "
+                        android:inputType="textCapWords"
+                        android:maxLength="30" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik42"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_username"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik42"
+                        android:text="@string/username" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_username"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_username"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_username"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:enabled="false"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/tvAsterik42"
+                        android:layout_centerVertical="true"
+                        android:layout_below="@id/tvMessage_username"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAsterik43"
+                        style="@style/asterik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/asterik" />
+
+                    <TextView
+                        android:id="@+id/tvQuestion_password"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@+id/tvAsterik43"
+                        android:text="@string/password" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_password"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_password"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_password"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/tvAsterik43"
+                        android:layout_centerVertical="true"
+                        android:layout_below="@id/tvMessage_password"
+                        android:clickable="true"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                        android:maxLength="15"
+                        android:maxLines="1" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save" />
+    </LinearLayout>
+</ScrollView>

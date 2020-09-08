@@ -1,0 +1,28 @@
+<resources>
+    <string name="missed_dose_quantity">دوا کی چھوڑ دی گئی خوراک</string>
+    <string name="administered_dose_quantity">دوا کی لی گئی خوراک</string>
+    <string name="dot_rate"> ٹی بی دوا کا DOT Rate</string>
+    <string name="drug_administration">دوا کی خوراک کس حد تک پوری کی گئی؟</string>
+    <string name="delivery_method">دوا کس طریقے سے لی گئی؟</string>
+    <string name="other">کسی اور طریقے سے دی گئی</string>
+
+    <string name="inpatient">ھسپتال میں داخلے کے دوران DOT کے تحت دی گئی</string>
+    <string name="outpatient_facility_based">ھسپتال میں معائنے کے وقت DOT کے تحت دی گئی</string>
+    <string name="outpatient_community_based"> مریض کے گھر پہ DOT کے تحت دی گئی</string>
+    <string name="self_administered_tx"> مریض نے خود SAT کے تحت دی گئی</string>
+    <string name="sat_and_dot">کچھ خوراک مریض نے خود SAT کے تحت لی، اور کچھ خوراک DOT کے تحت دی گئی</string>
+    <string name="other_specify">اگر کسی اور طریقے سے دی گئی تو طریقہ بتائیے</string>
+
+    <string name="fully_observed_dose">نسخہ پر مکمّل طور پر عمل کیا گیا</string>
+    <string name="missed_dose">نسخہ پر بالکل عمل نہیں کیا گیا</string>
+    <string name="incomplete_dose">نسخہ پر کچھ حد تک عمل کیا گیا</string>
+
+    <string name="age">عمر</string>
+    <string name="yr">سال</string>
+    <string name="dot">علاج کا دن</string>
+    <string name="warning">خبردار</string>
+    <string name="_continue">جاری رکھیں</string>
+    <string name="warning_message">دوا کی لی گئی خوراک نسخہ سے زیادہ ہے</string>
+    <string name="enter_administered_dose">دوا کی خوراک کی مقدار صحیح نہیں ہے</string>
+
+</resources>

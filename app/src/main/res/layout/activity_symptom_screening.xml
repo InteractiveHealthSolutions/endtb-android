@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/svMain"
+            android:layout_above="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.ihsinformatics.endtb.Screens.ContactRegistration">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvQuestion_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rlQuestion_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvAsterik1"
+                            style="@style/asterik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/asterik" />
+
+                        <TextView
+                            android:id="@+id/tvQuestion_contact"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toRightOf="@+id/tvAsterik1"
+                            android:text="Select Contact" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_contact"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_contact"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_contact"
+                            android:background="@drawable/drop_down_shape"
+                            android:orientation="horizontal">
+                            <Spinner
+                                android:id="@+id/spAnswer_contact"
+                                style="@style/question_answer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:popupBackground="@drawable/drop_down_popup_shape"
+                                android:spinnerMode="dropdown"
+                                android:entries="@array/gender" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="16dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvQuestion_contactVisit"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="Did the contact visit the clinic for symptom screening?" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_contactVisit"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_contactVisit"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/rgcontactVisit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_contactVisit"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RadioButton
+                                android:id="@+id/rbYescontactVisit"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/rbNocontactVisit"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/no" />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvQuestion_facilityID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rlQuestion_facilityID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvAsterik3"
+                            style="@style/asterik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/asterik" />
+
+                        <TextView
+                            android:id="@+id/tvQuestion_facilityID"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toRightOf="@+id/tvAsterik3"
+                            android:text="Facility ID" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_facilityID"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_facilityID"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/spAnswer_facilityID"
+                            style="@style/question_answer"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/drop_down_shape"
+                            android:layout_width="match_parent"
+                            android:digits="0123456789"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_facilityID" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvQuestion_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rlQuestion_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvAsterik4"
+                            style="@style/asterik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/asterik" />
+
+                        <TextView
+                            android:id="@+id/tvQuestion_weight"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toRightOf="@+id/tvAsterik4"
+                            android:text="Weight" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_weight"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_weight"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/spAnswer_weight"
+                            style="@style/question_answer"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/drop_down_shape"
+                            android:layout_width="match_parent"
+                            android:digits="0123456789"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_weight" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvQuestion_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rlQuestion_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvAsterik5"
+                            style="@style/asterik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/asterik" />
+
+                        <TextView
+                            android:id="@+id/tvQuestion_height"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toRightOf="@+id/tvAsterik5"
+                            android:text="Height (cm)" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_height"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_height"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/spAnswer_height"
+                            style="@style/question_answer"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/drop_down_shape"
+                            android:layout_width="match_parent"
+                            android:digits="0123456789"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_height" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvQuestion_pastAntiTBTx"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="Has the contact received anti-TB treatment in the past?" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_pastAntiTBTx"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_pastAntiTBTx"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/rgpastAntiTBTx"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_pastAntiTBTx"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RadioButton
+                                android:id="@+id/rbYespastAntiTBTx"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/rbpastAntiTBTx"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/no" />
+
+                            <RadioButton
+                                android:id="@+id/rbRefusepastAntiTBTx"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Refuse" />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvtbKind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvQuestion_tbKind"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="If YES, what kind of TB was it?" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_tbKind"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_tbKind"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/rgtbKind"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_tbKind"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RadioButton
+                                android:id="@+id/rbYestbKind"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="DS-TB" />
+
+                            <RadioButton
+                                android:id="@+id/rbtbKind"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="DR-TB" />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvQuestion_outcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/rlQuestion_outcome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvAsterik6"
+                            style="@style/asterik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="@string/asterik" />
+
+                        <TextView
+                            android:id="@+id/tvQuestion_outcome"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_toRightOf="@+id/tvAsterik6"
+                            android:text="If YES, what was the outcome of last anti-TB treatment?" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_outcome"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_outcome"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_outcome"
+                            android:background="@drawable/drop_down_shape"
+                            android:orientation="horizontal">
+                            <Spinner
+                                android:id="@+id/spAnswer_outcome"
+                                style="@style/question_answer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:popupBackground="@drawable/drop_down_popup_shape"
+                                android:spinnerMode="dropdown"
+                                android:entries="@array/gender" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="16dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/ic_drop_down" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvQuestion_cough"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="Does the contact  have cough for more than 2 weeks?" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_cough"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_cough"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/rgcough"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_cough"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RadioButton
+                                android:id="@+id/rbYescough"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/rbNocough"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/no" />
+
+                            <RadioButton
+                                android:id="@+id/rbRefusecough"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Refuse" />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvQuestion_thrive"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="Does the contact  have weight loss or failure to thrive?" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_thrive"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_thrive"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/rgthrive"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_thrive"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RadioButton
+                                android:id="@+id/rbYesthrive"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/rbNothrive"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/no" />
+
+                            <RadioButton
+                                android:id="@+id/rbRefusethrive"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Refuse" />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvQuestion_playfulness"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="Does the contact have reduced playfulness? (In younger children)" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_playfulness"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_playfulness"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/rgplayfulness"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_playfulness"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RadioButton
+                                android:id="@+id/rbYesplayfulness"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/rbNoplayfulness"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/no" />
+
+                            <RadioButton
+                                android:id="@+id/rbRefuseplayfulness"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Refuse" />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvQuestion_adenopathy"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="Does the contact have adenopathy for greater than 1 month?" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_adenopathy"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_adenopathy"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/rgadenopathy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_adenopathy"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RadioButton
+                                android:id="@+id/rbYesadenopathy"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/rbNoadenopathy"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/no" />
+
+                            <RadioButton
+                                android:id="@+id/rbRefuseadenopathy"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Refuse" />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvQuestion_hemoptysis"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="Does the contact have hemoptysis?" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_hemoptysis"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_hemoptysis"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/rghemoptysis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_hemoptysis"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RadioButton
+                                android:id="@+id/rbYeshemoptysis"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/rbNohemoptysis"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/no" />
+
+                            <RadioButton
+                                android:id="@+id/rbRefusehemoptysis"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Refuse" />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvQuestion_sweats"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="Does the contact have night sweats?" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_sweats"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_sweats"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/rgsweats"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_sweats"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RadioButton
+                                android:id="@+id/rbYessweats"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/rbNosweats"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/no" />
+
+                            <RadioButton
+                                android:id="@+id/rbRefusesweats"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Refuse" />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvQuestion_pregnant"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="Is the contact pregnant?" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_pregnant"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_pregnant"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/rgpregnant"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_pregnant"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RadioButton
+                                android:id="@+id/rbYespregnant"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/rbNopregnant"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/no" />
+
+                            <RadioButton
+                                android:id="@+id/rbnaepregnant"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Not applicable" />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvQuestion_symptomatic"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="Is the contact symptomatic?" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_symptomatic"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_symptomatic"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/rgsymptomatic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_symptomatic"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RadioButton
+                                android:id="@+id/rbYessymptomatic"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/rbNosymptomatic"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/no" />
+
+                            <RadioButton
+                                android:id="@+id/rbUnknownsymptomatic"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Unknown" />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/card_elevation"
+                    app:cardCornerRadius="@dimen/card_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvQuestion_investigations"
+                            style="@style/question_answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginStart="5dp"
+                            android:text="Any investigations requested for this contact?" />
+
+                        <TextView
+                            android:id="@+id/tvMessage_investigations"
+                            style="@style/message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvQuestion_investigations"
+                            android:gravity="right"
+                            android:text="@string/app_name"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/rginvestigations"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMessage_investigations"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RadioButton
+                                android:id="@+id/rbYesinvestigations"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/yes" />
+
+                            <RadioButton
+                                android:id="@+id/rbNoinvestigations"
+                                style="@style/answer"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/no" />
+
+                        </RadioGroup>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/save" />
+    </RelativeLayout>
+</layout>

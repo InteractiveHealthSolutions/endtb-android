@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ihsinformatics.endtb.Screens.PatientSearch">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnRegisterPatient"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:id="@+id/activity_patient_registeration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/frame"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_division"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tvQuestion_division"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/city" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_division"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_division"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_division"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_division" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_district"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvQuestion_district"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/town" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_district"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_district"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_district"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_district" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_upazila"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tvQuestion_upazila"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/upazila" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_upazila"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_upazila"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_upazila"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_upazila" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_union"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tvQuestion_union"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/landMark" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_union"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_union"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_union"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_union" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tvQuestion_name"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/patient_name" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_name"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_name"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_name"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:inputType="textCapWords"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYS "
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_name" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tvQuestion_age"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/age" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_age"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_age"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etAnswer_age"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:digits="0123456789"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:layout_below="@id/tvMessage_age" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_occupation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tvQuestion_occupation"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/occupation" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_occupation"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_occupation"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_occupation"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_occupation" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQuestion_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/drop_shadow"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tvQuestion_gender"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/sex" />
+
+                    <TextView
+                        android:id="@+id/tvMessage_gender"
+                        style="@style/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvQuestion_gender"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spAnswer_gender"
+                        style="@style/question_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMessage_gender"
+                        android:entries="@array/gender" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnPatientsList"
+                style="@style/button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:gravity="center"
+                android:text="@string/search_patients" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@color/colorPrimaryTint"
+            android:padding="5dp"
+            android:text="@string/search"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

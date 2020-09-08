@@ -1,0 +1,488 @@
+<resources>
+    <string name="app_name">endTB</string>
+    <string name="app_name_full">endTB Mobile Application</string>
+    <string name="save">Save</string>
+    <string name="search">Search</string>
+    <string name="name_of_facility">Name of referring facility</string>
+    <string name="other_name">Other facility name</string>
+    <string name="address_of_facility">Address of referring facility</string>
+    <string name="referring_facility_information">Referring Facility Information</string>
+    <string name="patient_information">Patient Information</string>
+    <string name="address_information">Address Information</string>
+    <string name="referrer_information">Referrer Information</string>
+    <string name="test_result_information">Test Result Information</string>
+    <string name="location_information">Location Information</string>
+    <string name="examiner_information">Examiner Information</string>
+    <string name="medical_information">Medical Information</string>
+    <string name="registration_number">Registration Number</string>
+    <string name="other_details">Other details</string>
+    <string name="patient_name">Name of patient</string>
+    <string name="occupation">Occupation</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="father_name">Father/ Husband\'s name</string>
+    <string name="upazila">Upazila</string>
+    <string name="landMark">Union</string>
+    <string name="address">Address</string>
+    <string name="landmark">Landmark</string>
+    <string name="between_1_to_9">Scanty number should be between 1 to 9</string>
+    <string name="between_5_to_49">Scanty number should be between 5 to 49</string>
+    <string name="insufficient_privileges">Insufficient privileges</string>
+    <string name="fill_required">Please enter required field</string>
+    <string name="between_0_to_24">Please enter value between 0 to 24</string>
+    <string name="incomplete_metadata">In complete metadata, please check server database and re-install app</string>
+    <string name="max_age_error">Age can not be above 110</string>
+    <string name="patient_history">Patient History</string>
+    <string name="other_specify">Specify other</string>
+    <string name="test_results">Test Results (click to edit)</string>
+    <string name="hiv_status">HIV-status</string>
+    <string name="patient_status">Patient Status</string>
+    <string name="status_date">Status date</string>
+    <string name="patient_id">Patient Registration ID</string>
+    <string name="encounter_date">Encounter Date</string>
+    <string name="registered_on">Regertered on</string>
+    <string name="asterik">*</string>
+    <string name="date">Date</string>
+    <string name="age">Age</string>
+    <string name="dob">Date of birth</string>
+    <string name="yr">yr</string>
+    <string name="dot">Day of treatment</string>
+    <string name="sex">Sex</string>
+    <string name="primary_contact">Primary Contact</string>
+    <string name="secondary_contact">Secondary Contact</string>
+    <string name="contact_no">Contact No</string>
+    <string name="pos">Positive</string>
+    <string name="neg">Negative</string>
+    <string name="unknown">Unknown</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_username">Please enter username</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="provide_credentials">Please enter credentials</string>
+    <string name="exit_app">Do you want to leave the app?</string>
+    <string name="leave_form">Leave Form</string>
+    <string name="corrupt_record">"Corrupt record, can not proceed"</string>
+    <string name="leave">Leave</string>
+    <string name="try_later">Operation not successful, try later</string>
+    <string name="form_not_saved">Form not saved, leave anyway?</string>
+
+    <string name="server_address">Server Address</string>
+    <string name="server_port">Port Number</string>
+    <string name="date_of_collection">Date of collection</string>
+    <string name="test_type">Test type</string>
+    <string name="reason_for_testing">Reason for testing</string>
+    <string name="no_of_months">No. of months</string>
+    <string name="disease_classification">Disease classification</string>
+    <string name="ep_site">EP site</string>
+    <string name="nature_of_specimen">Nature of specimen</string>
+    <string name="specimen_no">Specimen number</string>
+    <string name="specimen_identification_no">Specimen identification number</string>
+    <string name="opd_registration_number">OPD registration number</string>
+    <string name="name_of_person">Referrer Name</string>
+    <string name="designation_of_person">Referrer Designation</string>
+    <string name="organization_name">Referrer Organization</string>
+    <string name="organization_type">Organization type</string>
+    <string name="sputum_collected_by">Sputum collected by</string>
+    <string name="name">Name</string>
+    <string name="microscopy">Microscopy</string>
+    <string name="cxr">CXR</string>
+    <string name="xpert_mtb">Xpert MTB/ RIF</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="follow_up">Follow-up</string>
+    <string name="pulmonary">Pulmonary</string>
+    <string name="extra_oulmonary">Extra-pulmonary (EP)</string>
+    <string name="sputum">Sputum</string>
+    <string name="urine">Urine</string>
+    <string name="pus">Pus</string>
+    <string name="sputum_in_preservative">Sputum in preservative</string>
+    <string name="other">Other</string>
+    <string name="other_specimen">Specify other specimen</string>
+    <string name="type">Preservative Type</string>
+    <string name="signin">Signin</string>
+    <string name="patient_registration_number">Patient Registration Number</string>
+    <string name="_patient_id">Patient ID</string>
+    <string name="register_patient">Register Patient</string>
+    <string name="search_patients">Search Patients</string>
+    <string name="search_lab_tests">Search Lab Tests</string>
+    <string name="view_error_records">View Error Records</string>
+    <string name="show_error">Show Error</string>
+    <string name="error">Error</string>
+    <string name="show_data">Show Data</string>
+    <string name="patients_list">Patients List</string>
+    <string name="add_test_info">Add Test Info</string>
+    <string name="add_test_order">Add Test Order</string>
+    <string name="add_test_result">Add Test Result</string>
+    <string name="view_microscopy_test_result">View Microscopy Test Profile</string>
+    <string name="view_microscopy_eqa_test_result">View Microscopy (EQA) Test Profile</string>
+    <string name="view_cxr_test_result">View CXR Test Profile</string>
+    <string name="view_xpert_mtb_rif_test_result">View Xpert MTB/ RIF Test Profile</string>
+
+    <string-array name="gender">
+        <item></item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string name="test_registration_no">Test Registration Number</string>
+    <string name="specimen_appearance">Specimen appearance</string>
+    <string name="test_result">Test Result</string>
+    <string name="microscopy_test_type">Microscopy Test Type</string>
+    <string name="scanity_no">Scanty number</string>
+    <string name="result">Result</string>
+    <string name="cxr_result">CXR Result</string>
+    <string name="select_lab">Select Lab</string>
+    <string name="mtb_test_result">Xpert MTB/ RIF Test Result</string>
+    <string name="examined_by">Examined By</string>
+    <string name="eqa_controller">EQA Controller</string>
+    <string name="name_of_medical_tech">Name of Medical Tech(Lab)</string>
+    <string name="name_of_Laboratory">Name of Laboratory</string>
+    <string name="address_of_laboratory">Address of Laboratory</string>
+    <string name="lab_id">Lab ID</string>
+    <string name="address_id_of_laboratory">Address ID of Laboratory</string>
+    <string name="organization">Organization</string>
+    <string name="remarks">Remarks</string>
+    <string name="submit">Submit</string>
+
+    <string name="went_wrong">Something went wrong on server</string>
+    <string name="can_not_edit_atm">This record can not be edited right now</string>
+    <string name="not_connected">Device is not connected to internet</string>
+    <string name="could_not_parse_response">Could not parse server response</string>
+    <string name="not_mapped_to_lab">You are not mapped to any Lab</string>
+    <string name="login_successful">Login successful</string>
+    <string name="login_un_successful">Login un-successful</string>
+    <string name="unable_to_connect">Unable to connect to server</string>
+    <string name="invalid_request">Invalid request</string>
+    <string name="record_saved">Record Saved</string>
+    <string name="record_updated">Record Updated</string>
+    <string name="form_saved">Form Saved</string>
+    <string name="method_call_edittext">This method call is only supported for EditText</string>
+    <string name="method_call_spinner">This method call is only supported for Spinner</string>
+    <string name="no_record_found">No record found</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_multiple_test_orders_display">Select one test order</string>
+    <string name="title_activity_preferences">Settings</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="illegal_state">Device is in unexpected state, a reset is needed</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+    <string name="person_role">Role of person</string>
+    <string name="facility">Facility</string>
+
+    <string name="city">City</string>
+    <string name="town">Town</string>
+    <string name="uc">U.C</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="not_applicable">Not applicable</string>
+    <string name="nic">National ID</string>
+    <string name="occupation_other">Other occupation</string>
+    <string name="person_name">Name of Person</string>
+    <string name="ever_health_worker">Has this person ever been a Health Worker?</string>
+    <string name="trained_at_facility">Has the Treatment Supporter been trained at facility?</string>
+    <string name="which_facility">Which Facility</string>
+    <string name="trained_by">Trained By</string>
+    <string name="training_date">Training date</string>
+    <string name="is_health_worker">Is this person a Health Worker?</string>
+    <string name="languages_spoken">Languages spoken by the Treatment Supporter</string>
+    <string name="can_administer_injection">Does the Treatment Supporter know how to administer injections?</string>
+    <string name="error_invalid_role">Please select a valid role</string>
+    <string name="username_acquired">Username already acquired</string>
+    <string name="password_error">Password should be at least 8 characters long and at least one capital letter</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="drug_name">Drug name</string>
+    <string name="prescribed_dose">Prescribed dose: </string>
+    <string name="summary_of_drug_administration">Summary of drug administration</string>
+    <string name="summary_of_tx_delivery">Summary of treatment delivery methods </string>
+    <string name="missed_dose_quantity">Missed dose</string>
+    <string name="administered_dose_quantity">Administered dose quantity</string>
+    <string name="dot_rate">DOT rate</string>
+    <string name="drug_administration">Drug administration</string>
+    <string name="delivery_method">Treatment delivery method</string>
+    <string name="register_provider">Register Provider</string>
+    <string name="view_patients">View Patients</string>
+    <string name="other_language">Other language</string>
+    <string name="inpatient">Inpatient</string>
+    <string name="missed_prescribed_days">Missed prescribed days</string>
+    <string name="incomplete_prescribed_days">Incomplete prescribed days</string>
+    <string name="fully_observed_days">Fully observed days</string>
+    <string name="outpatient_facility_based">Outpatient facility-based</string>
+    <string name="outpatient_community_based">Outpatient community-based</string>
+    <string name="self_administered_tx">Self administered treatment</string>
+    <string name="sat_and_dot">Combination of SAT and DOT</string>
+    <string name="tx_method_this_month">Treatment delivery method this month: </string>
+    <string name="treatment_not_started">Treatment not started</string>
+    <string name="enter_data">Enter data</string>
+    <string name="view_data">View data</string>
+
+
+    <string name="fully_observed_dose">Fully observed prescribed dose</string>
+    <string name="missed_dose">Missed prescribed dose</string>
+    <string name="incomplete_dose">Incomplete prescribed dose</string>
+
+    <string name="is_reporting_ae">Is the patient reporting an adverse event?</string>
+    <string name="is_serious_ae">If yes, is this a serious adverse event?</string>
+    <string name="was_pat_transferred">If serious, was the patient transferred to admission site immediately?</string>
+    <string name="fever">Fever</string>
+    <string name="slow_heart_rate">Heart rate too slow or too fast</string>
+    <string name="chest_pain">Chest Pain</string>
+    <string name="pain">Pain ( other than chest )</string>
+    <string name="shortness_of_breath">Shortness of breath</string>
+    <string name="blood_loss">Blood loss from any part of the body</string>
+    <string name="eye_symptoms">Eye symptoms</string>
+    <string name="abdominal_pain">Abdominal pain</string>
+    <string name="vomiting">Vomiting</string>
+    <string name="diarrhea">Diarrhea</string>
+    <string name="severe_allergic_reaction">Severe allergic reaction</string>
+    <string name="depressed_consciousness_level">Depressed level of consciousness</string>
+    <string name="new_seizure_onset">New onset of seizure (No past history of seizure)</string>
+    <string name="seizure">Seizure (past history of seizure present)</string>
+    <string name="depression">Depression</string>
+    <string name="urine_problems">Urine problems</string>
+    <string name="if_non_serious_ae">If a non-serious adverse event then:</string>
+
+    <string name="fup_next_day">Follow up next day for clinical review</string>
+    <string name="cunsult_n_advice_ancillary">Consult on phone with TB doctor for advice and advise ancillary medications</string>
+    <string name="cunsult_n_advice_referral">Consult on phone with TB doctor for advice and advise transfer to referral hospital</string>
+    <string name="no_action_required">No action required</string>
+
+    <string name="type_of_encounter">Type of encounter</string>
+    <string name="month_of_tx">Month of treatment?</string>
+    <string name="is_new_member">Contact Registry (NEW): Is there a new member of the family who has NEVER had symptom screening?</string>
+    <string name="how_many_new_members">How many new family members are there who have not had symptom screening yet?</string>
+    <string name="how_many_people_sleep">Contact Registry: How many people (excluding you) sleep in your home?</string>
+    <string name="contact_name">Full Name (first &amp; last)</string>
+    <string name="age_dob">Age and/or DOB</string>
+    <string name="relationship">Relationship to you?</string>
+    <string name="other_relationship">Relationship</string>
+    <string name="contact">Contact</string>
+
+    <string name="does_patient_understand">Does the patient understand his/her TB regimen (drug names and doses)?</string>
+    <string name="does_pat_know_side_effect">Does the patient know about common side effects of his/her TB drugs?</string>
+    <string name="how_often_dot">How often does the patient\'s Treatment Supporter provide DOT?</string>
+    <string name="dot_irregularly">If the Treatment Supporter provides DOT irregularly, then:</string>
+    <string name="place_dot">Place where the Treatment Supporter provides DOT:</string>
+    <string name="other_place_dot">If other, then specify:</string>
+    <string name="dot_last_prescribed_day">Did the Treatment Supporter provide DOT on last prescribed day prior to this visit?</string>
+    <string name="administer_injectables">Does the Treatment Supporter administer injectables?</string>
+    <string name="patient_miss_any_dose">Did the patient miss any drug dose since the last monitoring visit?</string>
+    <string name="why_missed_dose">If yes, then why:</string>
+    <string name="other_reason_missed_dose">If reason for missed dose \'other\'\, then specify:</string>
+    <string name="ts_practise_measures">Does the Treatment Supporter practice appropriate infection control measures when he visits the patient?</string>
+    <string name="infection_control_measure_at_home">Does the patient and his/her family practice infection control measures at home?</string>
+    <string name="how_long_ts_wait">How long does the Treatment Supporter wait after administering the drugs?</string>
+    <string name="ts_register_contacts">Does the Treatment Supporter register patient\'s household members for contact screening?</string>
+    <string name="when_last_screening">If yes, then when was the last contact screening performed? (an estimated date)</string>
+    <string name="is_pat_satisfied">Is the patient satisfed with the attitude of his/her Treatment Supporter?</string>
+    <string name="pat_aubmit_sputum">Did the patient submit sputum on his/her last clinic visit?</string>
+    <string name="why_not_submit_sputum">If no,then why?</string>
+    <string name="other_reason_not_submit_sputum">Other reason for non submission of sputum:</string>
+    <string name="did_receive_food_basket">Did the patient receive food basket incentive for last month?</string>
+    <string name="did_report_ae">Did the patient report any adverse events to the Treatment Supporter since last monitoring visit?</string>
+    <string name="ts_action_on_ae">If yes, then what action was taken by the Treatment Supporter?</string>
+    <string name="other_action_on_ae">If action \'other\'\, then specify:</string>
+    <string name="has_ts_addressed_social_pb">Has the Treatment Supporter addressed any social problems that the patient faced?</string>
+    <string name="refer_for_consulting">Refer for counseling?</string>
+    <string name="consulting_for_what">If yes, then for what?</string>
+    <string name="other_what">If other, then specify:</string>
+    <string name="notes">Notes:</string>
+    <string name="refuse">Refuse</string>
+    <string name="english">English</string>
+    <string name="roman">Roman</string>
+    <string name="urdu">اردو</string>
+    <string name="warning">warning</string>
+    <string name="_continue">Continue</string>
+    <string name="warning_message">Administered dose exceeds prescribed dose</string>
+    <string name="enter_administered_dose">Invalid Administered dose</string>
+
+    <string-array name="treatment_delivery_method">
+        <item>@string/inpatient</item>
+        <item>@string/outpatient_facility_based</item>
+        <item>@string/outpatient_community_based</item>
+        <item>@string/self_administered_tx</item>
+        <item>@string/sat_and_dot</item>
+        <item>@string/other</item>
+    </string-array>
+    <string-array name="treatment_delivery_method_uuids">
+        <item>c374eb7e-6bf3-44fe-824a-70c2c355bce2</item>
+        <item>e07f9253-90bb-42af-82b9-0da224995f07</item>
+        <item>8b009550-4f73-45a6-9669-6d46f5b32aa2</item>
+        <item>fe1fc436-856e-4d3f-9795-41b3f6c954eb</item>
+        <item>21f0727e-d7d5-4549-8902-a32d310069f6</item>
+        <item>b31c6dab-b80f-413c-946d-29fa3f79fa3d</item>
+    </string-array>
+    <string-array name="languages">
+        <item>Urdu</item>
+        <item>Punjabi</item>
+        <item>Sindhi</item>
+        <item>Pushto</item>
+        <item>Balochi </item>
+        <item>Saraiki</item>
+        <item>Hazara</item>
+        <item>English</item>
+        <item>Gujrati</item>
+        <item>Memoni</item>
+        <item>Brohi</item>
+        <item>Hindko </item>
+        <item>Chitrali</item>
+        <item>Kalaasha</item>
+        <item>Kashmiri</item>
+        <item>Persian</item>
+        <item>Balti</item>
+        <item>Makrani</item>
+        <item>Kathiawari</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="occupations">
+        <item>Artist</item>
+        <item>Beggar</item>
+        <item>Carpenter</item>
+        <item>Casual Labor</item>
+        <item>Child Labor</item>
+        <item>Clerk</item>
+        <item>Doctor</item>
+        <item>Driver</item>
+        <item>Engineer</item>
+        <item>Farmer</item>
+        <item>Fisherman</item>
+        <item>Food Vendor</item>
+        <item>Forestry Worker</item>
+        <item>Housework</item>
+        <item>Machine Operator</item>
+        <item>Miner</item>
+        <item>Pilot</item>
+        <item>Plumber</item>
+        <item>Professional</item>
+        <item>Reporter</item>
+        <item>Sales Representative</item>
+        <item>Security Officer</item>
+        <item>Shepherd</item>
+        <item>Slum Worker</item>
+        <item>Small Business Owner</item>
+        <item>Tailor</item>
+        <item>Trader</item>
+        <item>Teacher</item>
+        <item>Vegetable/Fruit Seller</item>
+        <item>Unknown</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="roles">
+        <item>Treatment Coordinator</item>
+        <item>Field Manager</item>
+        <item>Clinical Coordinator</item>
+        <item>Medical Officer</item>
+        <item>Data Entry Officer</item>
+        <item>Treatment Supporter</item>
+        <item>Facility DOT Provider</item>
+        <item>MDR Counselor</item>
+    </string-array>
+    <string name="title_activity_tsmonitoring">TSMonitoring</string>
+
+    <string-array name="relations">
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Husband</item>
+        <item>Wife</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Nephew</item>
+        <item>Neice</item>
+        <item>Grandfather</item>
+        <item>Grandmother</item>
+        <item>Grandson</item>
+        <item>Granddaughter</item>
+        <item>Father in law</item>
+        <item>Mother in law</item>
+        <item>Daughter in law</item>
+        <item>Son in law</item>
+        <item>Brother in law</item>
+        <item>Sister in law</item>
+        <item>Uncle</item>
+        <item>Aunt</item>
+        <item>Cousin</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="type_of_encounter">
+        <item>Baseline</item>
+        <item>Follow-up (nth month of treatment)</item>
+        <item>End of treatment</item>
+    </string-array>
+</resources>

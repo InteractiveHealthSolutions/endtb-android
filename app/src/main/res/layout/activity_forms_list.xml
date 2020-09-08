@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ihsinformatics.endtb.Screens.FormsList">
+
+    <data>
+        <variable
+            name="dtmFormName"
+            type="String" />
+        <variable
+            name="adverseEventFormName"
+            type="String" />
+        <variable
+            name="contactRegistryFormName"
+            type="String" />
+        <variable
+            name="contactSymptomFormName"
+            type="String" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardBackgroundColor="@color/colorPrimaryTint"
+        app:cardUseCompatPadding="true"
+        app:elevation="@dimen/card_elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvDTM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardUseCompatPadding="true"
+                app:elevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp"
+                        app:srcCompat="@drawable/ic_medicine" />
+
+                    <view
+                        style="@style/vertical_separator"
+                        class="android.widget.TextView"
+                        android:clickable="false" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btnDTM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="start|center"
+                        android:padding="10dp"
+                        android:text="@{dtmFormName}"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvAE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvDTM"
+                android:clickable="true"
+                android:visibility="gone"
+                android:onClick="onClick"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardUseCompatPadding="true"
+                app:elevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp"
+                        app:srcCompat="@drawable/ic_exclamation" />
+
+                    <view
+                        style="@style/vertical_separator"
+                        class="android.widget.TextView"
+                        android:clickable="false" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btnAE"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="start|center"
+                        android:padding="10dp"
+                        android:text="@{adverseEventFormName}"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvCR"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvAE"
+                android:clickable="true"
+                android:onClick="onClick"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardUseCompatPadding="true"
+                app:elevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp"
+                        app:srcCompat="@drawable/ic_connection" />
+
+                    <view
+                        style="@style/vertical_separator"
+                        class="android.widget.TextView"
+                        android:clickable="false" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btnCR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="start|center"
+                        android:padding="10dp"
+                        android:text="@{contactRegistryFormName}"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvSS"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvCR"
+                android:clickable="true"
+                android:onClick="onClick"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardUseCompatPadding="true"
+                app:elevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp"
+                        app:srcCompat="@drawable/ic_magnify" />
+
+                    <view
+                        style="@style/vertical_separator"
+                        class="android.widget.TextView"
+                        android:clickable="false" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btnSS"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="start|center"
+                        android:padding="10dp"
+                        android:text="@{contactSymptomFormName}"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</layout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="missed_dose_quantity">Dawa ki chhor di gayee khuraak</string>
+    <string name="administered_dose_quantity">Dawa ki li gayee khuraak</string>
+    <string name="dot_rate">DOT Rate</string>
+    <string name="drug_administration">Dawa ki khuraak kis hadd tak poori ki gayee</string>
+    <string name="delivery_method">Dawa kis tareeqay se li gayee</string>
+    <string name="other">Kisi aur tareeqay se di gayee</string>
+
+    <string name="inpatient">Hospital main daakhlay ke doraan DOT ke tehet di gayee</string>
+    <string name="outpatient_facility_based">Hospital main muainay ke waqt DOT ke tehet di gayee</string>
+    <string name="outpatient_community_based">Mareez ke ghar pe DOT ke tehet di gayee</string>
+    <string name="self_administered_tx">Mareez ne khud (SAT ke tehet) li</string>
+    <string name="sat_and_dot">Kuch khuraak khud li, aur kuch DOT ke tehet li gayee</string>
+    <string name="other_specify">Agar kisi aur tareeqay se di gayee tou tareeqa bataiyye</string>
+
+    <string name="fully_observed_dose">Nuskhay par mukammal tor par amal kiya gaya</string>
+    <string name="missed_dose">Nuskhay par bilkul amal nahin kiya gaya</string>
+    <string name="incomplete_dose">Nuskhay par kuch had tak amal kiya gaya</string>
+
+    <string name="age">Uamar</string>
+    <string name="yr">Saal</string>
+    <string name="dot">elaaj ka din</string>
+    <string name="warning">Khabardar</string>
+    <string name="_continue">Jari rakhen</string>
+    <string name="warning_message">Dawa ki li gayee khuraak nuskhay se ziyada hai</string>
+    <string name="enter_administered_dose">Dawa ki khuraak ki miqdar sahi nahi hai</string>
+
+</resources>
